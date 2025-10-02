@@ -1,0 +1,39 @@
+// colors:
+$white: #FFFFFF;
+$black: #000000;
+$blue: #29D3D1;
+$red: #EB645A;
+
+// fonts:
+@font-face {
+  font-family: 'FuturaDemiC';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/font_FuturaDemiC/Futurademic.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/font_Montserrat/static/Montserrat-SemiBold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/font_Montserrat/static/Montserrat-Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'FuturaPT';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/font_FuturaPT/FuturaCyrillicBook.ttf') format('ttf');
+}
+
+$futurademic: 'FuturaDemiC', sans-serif;
+$montserrat400: 'Montserrat', sans-serif;
+$montserrat600: 'Montserrat', sans-serif;
+$futura: 'FuturaPT', sans-serif;
