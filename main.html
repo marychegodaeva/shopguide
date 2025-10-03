@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sass/css/styles.css">
     <title>SHOPGUIDE</title>
   </head>
   <body>
@@ -10,29 +11,35 @@
       <section class="header">
         <header class="header__social">
           <div class="header__social--icons">
-            <img src="img/icons/social/vk.svg" alt="Vk" />
-            <img src="img/icons/social/twitter.svg" alt="Twitter" />
-            <img src="img/icons/social/instagram.svg" alt="Instagram" />
-            <img src="img/icons/social/facebook.svg" alt="Facebook" />
-            <img src="img/icons/social/ok.svg" alt="Ok" />
+            <a href="#"><img src="img/icons/social/vk.svg" alt="Vk" /></a>
+            <a href="#"><img src="img/icons/social/twitter.svg" alt="Twitter" /></a>
+            <a href="#"><img src="img/icons/social/instagram.svg" alt="Instagram" /></a>
+            <a href="#"><img src="img/icons/social/facebook.svg" alt="Facebook" /></a>
+            <a href="#"><img src="img/icons/social/ok.svg" alt="Ok" /></a>
           </div>
-          <div class="button white-button">Стать партнером</div>
+          <a href="#parthers" class="button white-button">Стать партнером</a>
         </header>
         <article class="header__main">
           <div class="header__main-info">
-            <div class="header__main-info--sale">Только лучшие акции</div>
-            <h1></h1>
+            <div class="header__main-info--sale">
+              <img src="img/icons/flag.svg" alt="Голубой флажок">
+              <span>Только лучшие акции</span>
+            </div>
+            <h1>SHOP<b>GUIDE</b></h1>
             <div class="header__main-info--download">
-              <hr />
-              <div></div>
-              <hr />
+              <img width="184px" src="img/icons/line.svg" alt="Линия">
+              <div>загрузить</div>
+              <img width="184px" src="img/icons/line.svg" alt="Линия">
             </div>
             <div class="header__main-info--download-icons">
-              <img src="img/icons/app_store.svg" alt="App Store">
-              <img src="img/icons/google_play.svg" alt="Google Play">
+              <img height="64px" src="img/icons/app_store.svg" alt="App Store" />
+              <img height="64px" src="img/icons/google_play.svg" alt="Google Play" />
             </div>
           </div>
-          <img src="img/images/iphone_main.png" alt="ShopGuide on mobile phone">
+          <img class="header__main-iphone"
+            src="img/images/iphone_main.png"
+            alt="ShopGuide on mobile phone"
+          />
         </article>
       </section>
       <section class="scrool">
@@ -111,7 +118,7 @@
           <p class="events__desc--info"></p>
         </article>
       </section>
-      <section class="parthers">
+      <section class="parthers" id="parthers">
         <h2 class="parthers--title"></h2>
         <article class="parthers__icons">
           <button class="parthers__icons--button">

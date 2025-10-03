@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.button {
+  text-transform: uppercase;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  color: #FFFFFF;
+  font-size: 18px;
+  max-width: 216px;
+  width: 100%;
+  max-height: 46px;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  outline: 2px solid #FFFFFF;
+  outline-offset: -2px;
+}
+.button:hover {
+  background-color: #29D3D1;
+  outline: none;
+  transition-duration: 0.5s;
+}
+
+::selection {
+  background-color: #29D3D1;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+body main {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+body main .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFFFF;
+  max-height: 810px;
+  background-image: url("../../img/images/background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+body main .header__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 22px 155px;
+  max-width: 1285px;
+  width: 100%;
+}
+body main .header__social--icons {
+  display: flex;
+  gap: 10px;
+  max-height: 53px;
+  max-width: 305px;
+  width: 100%;
+}
+body main .header__social--icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 53px;
+  height: 53px;
+  overflow: hidden;
+}
+body main .header__main {
+  max-width: 1064px;
+  width: 100%;
+  margin: 105px 268px 0 268px;
+  display: flex;
+  justify-content: space-between;
+}
+body main .header__main-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  max-width: 485px;
+  width: 100%;
+  margin-top: 72px;
+}
+body main .header__main-info--sale {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: -32px;
+}
+body main .header__main-info--sale img {
+  position: relative;
+  z-index: 1;
+}
+body main .header__main-info--sale span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  z-index: 2;
+  text-transform: uppercase;
+  padding: 10px 13px;
+}
+body main .header__main-info h1 {
+  font-size: 81px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 0.5;
+  letter-spacing: 2.5px;
+}
+body main .header__main-info h1 b {
+  font-weight: 600;
+}
+body main .header__main-info--download {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+body main .header__main-info--download-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+body main .header__main-info--download-icons img {
+  cursor: pointer;
+}
+body main .header__main-iphone {
+  height: 608px;
+}
+body main .header__main-iphone:hover {
+  filter: drop-shadow(0 0 30px #FFFFFF);
+  transition: 0.5s;
+}/*# sourceMappingURL=styles.css.map */
