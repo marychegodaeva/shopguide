@@ -14,6 +14,7 @@
   border-radius: 5px;
   outline: 2px solid #FFFFFF;
   outline-offset: -2px;
+  cursor: pointer;
 }
 .button:hover {
   background-color: #29D3D1;
@@ -27,6 +28,7 @@
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 body {
@@ -144,4 +146,65 @@ body main .header__main-iphone {
 body main .header__main-iphone:hover {
   filter: drop-shadow(0 0 30px #FFFFFF);
   transition: 0.5s;
+}
+body main .scrool {
+  display: flex;
+  justify-content: center;
+  margin-top: -25px;
+}
+body main .scrool__down {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background-color: #29D3D1;
+  border: none;
+  border-radius: 15px;
+  padding: 17px 60px;
+  max-width: 277px;
+  outline: none;
+  max-height: 51px;
+  box-shadow: 1px 4px 24px rgba(0, 0, 0, 0.35);
+}
+body main .scrool__down:hover {
+  background-color: #FFFFFF;
+  outline: 2px solid #29D3D1;
+  color: #29D3D1;
+}
+body main .scrool__down:hover svg path {
+  stroke: #29D3D1;
+  transition-duration: 0.5s;
+}
+body main .scrool span {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+body main .benefits {
+  max-width: 1285px;
+  width: 100%;
+  margin: 100px auto;
+}
+body main .benefits__items {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+body main .benefits__item {
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+}
+body main .benefits__item--subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 40px 0 20px 0;
+}
+body main .benefits__item--desc {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
 }/*# sourceMappingURL=styles.css.map */

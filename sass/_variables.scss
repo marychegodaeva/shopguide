@@ -30,6 +30,7 @@ $bold: 600;
   border-radius: 5px;
   outline: 2px solid $white;
   outline-offset: -2px;
+  cursor: pointer;
 
   &:hover {
     background-color: $blue;
@@ -44,6 +45,7 @@ $bold: 600;
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 // @font-face {
