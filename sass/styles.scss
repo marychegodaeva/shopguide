@@ -1,4 +1,4 @@
-@import "variables.scss", "mixins.scss";
+@import "variables.scss";
 
 body {
   margin: 0 auto;
@@ -90,11 +90,12 @@ body {
           }
 
           h1 {
-            font-size: 81px;
+            font-size: 76px;
+            font-family: $montserrat;
             font-weight: $regular;
             margin: 0;
             line-height: 0.5;
-            letter-spacing: 2.5px;
+            letter-spacing: 0;
 
             b {
               font-weight: $bold;
@@ -205,6 +206,7 @@ body {
             font-size: 32px;
             text-transform: uppercase;
             opacity: 40%;
+            cursor: pointer;
 
             &:hover {
               transition: $t05;
@@ -239,22 +241,31 @@ body {
         position: absolute;
         z-index: 2;
         top: -70%;
-        right: 18%;
+        right: 10%;
         pointer-events: none;
       }
 
       &__desc {
         background-color: $grey;
-        padding: 68px 0 150px 285px;
+        padding: 68px 0 110px 285px;
 
         h2 {
           text-transform: uppercase;
-          font-size: 24px;
           line-height: 30px;
+          max-width: 253px;
+          font-size: 32px;
+          font-family: $montserrat;
+
+          &:hover {
+            color: $red;
+            transition: $t05;
+          }
         }
 
         p {
-          max-width: 435px;
+          max-width: 600px;
+          font-size: 24px;
+          line-height: 30px;
         }
       }
     }
@@ -326,8 +337,15 @@ body {
         font-size: 24px;
         line-height: 30px;
         text-align: center;
-        margin-bottom: 30px;
         margin-top: 0;
+
+        &.first {
+          margin-bottom: 0;
+        }
+
+        &.last {
+          margin-bottom: 30px;
+        }
       }
 
       .blue-button {
@@ -399,3 +417,5 @@ body {
     }
   }
 }
+
+@import "mixins.scss";

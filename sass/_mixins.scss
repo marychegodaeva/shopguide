@@ -1,0 +1,167 @@
+@mixin mobile-390 {
+  @media (max-width: 390px) {
+    @content;
+  }
+}
+
+@include mobile-390 {
+  body {
+    main {
+      max-width: 390px;
+      align-items: center;
+
+      .header {
+        height: 101vh;
+        &__social {
+          display: none;
+        }
+
+        &__main {
+          max-width: 390px;
+          margin: 190px auto 205px auto;
+          &-info {
+            gap: 30px;
+            margin: 0;
+            &--sale {
+              margin-right: 0;
+              margin-bottom: -30px;
+            }
+
+            h1 {
+              font-size: 55px;
+              z-index: 2;
+            }
+
+            &--download {
+              &-icons {
+                flex-wrap: wrap;
+                justify-content: center;
+              }
+            }
+          }
+
+          &-iphone {
+            display: none;
+          }
+        }
+      }
+
+      .benefits {
+        max-width: 300px;
+        margin: 55px auto 0 auto;
+
+        &__items {
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
+
+        &__item {
+          &--desc {
+            font-size: 19.5px;
+            line-height: 25px;
+          }
+        }
+      }
+
+      .actions {
+        display: none;
+      }
+
+      .events {
+        max-width: 350px;
+        width: 100%;
+        text-align: center;
+        margin: 80px 0;
+
+        img {
+          display: none;
+        }
+
+        &__desc {
+          background: none;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          h2 {
+            margin: 0 0 30px 0;
+          }
+
+          p {
+            line-height: 36px;
+            margin: 0;
+          }
+        }
+      }
+
+      .parthers {
+        margin-bottom: 40px;
+        h2 {
+          margin-bottom: 60px;
+        }
+
+        &__icons {
+          margin-bottom: 40px;
+          position: relative;
+          width: 105%;
+
+          &--button {
+            z-index: 3;
+            position: absolute;
+            top: 40%;
+            left: 10px;
+
+            &.right {
+              z-index: 3;
+              position: absolute;
+              top: 40%;
+              left: 330px;
+            }
+          }
+
+          &--main {
+            #prada,
+            #nike,
+            #zara,
+            #pazolini {
+              display: none;
+            }
+          }
+        }
+
+        &--info {
+          max-width: 310px;
+          &.first {
+            margin-bottom: 10px;
+          }
+
+          &.last {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+
+    footer {
+      max-height: 183px;
+      padding: 40px 68px;
+      max-width: 390px;
+      background-position: center center;
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+      gap: 40px;
+
+      .footer {
+        align-items: center;
+        gap: 30px;
+
+        &__links {
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+      }
+    }
+  }
+}

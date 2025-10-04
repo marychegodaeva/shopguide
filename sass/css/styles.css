@@ -147,11 +147,12 @@ body main .header__main-info--sale span {
   padding: 10px 13px;
 }
 body main .header__main-info h1 {
-  font-size: 81px;
+  font-size: 76px;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin: 0;
   line-height: 0.5;
-  letter-spacing: 2.5px;
+  letter-spacing: 0;
 }
 body main .header__main-info h1 b {
   font-weight: 600;
@@ -244,6 +245,7 @@ body main .actions__desc-chapters h3 {
   font-size: 32px;
   text-transform: uppercase;
   opacity: 40%;
+  cursor: pointer;
 }
 body main .actions__desc-chapters h3:hover {
   transition: 0.5s ease;
@@ -271,20 +273,28 @@ body main .events img {
   position: absolute;
   z-index: 2;
   top: -70%;
-  right: 18%;
+  right: 10%;
   pointer-events: none;
 }
 body main .events__desc {
   background-color: #edecec;
-  padding: 68px 0 150px 285px;
+  padding: 68px 0 110px 285px;
 }
 body main .events__desc h2 {
   text-transform: uppercase;
-  font-size: 24px;
   line-height: 30px;
+  max-width: 253px;
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+}
+body main .events__desc h2:hover {
+  color: #eb645a;
+  transition: 0.5s ease;
 }
 body main .events__desc p {
-  max-width: 435px;
+  max-width: 600px;
+  font-size: 24px;
+  line-height: 30px;
 }
 body main .parthers {
   display: flex;
@@ -344,8 +354,13 @@ body main .parthers--info {
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-  margin-bottom: 30px;
   margin-top: 0;
+}
+body main .parthers--info.first {
+  margin-bottom: 0;
+}
+body main .parthers--info.last {
+  margin-bottom: 30px;
 }
 body main .parthers .blue-button {
   box-shadow: none;
@@ -406,4 +421,134 @@ body footer .button {
   font-weight: 400;
   letter-spacing: -0.5px;
   background: none;
+}
+
+@media (max-width: 390px) {
+  body main {
+    max-width: 390px;
+    align-items: center;
+  }
+  body main .header {
+    height: 101vh;
+  }
+  body main .header__social {
+    display: none;
+  }
+  body main .header__main {
+    max-width: 390px;
+    margin: 190px auto 205px auto;
+  }
+  body main .header__main-info {
+    gap: 30px;
+    margin: 0;
+  }
+  body main .header__main-info--sale {
+    margin-right: 0;
+    margin-bottom: -30px;
+  }
+  body main .header__main-info h1 {
+    font-size: 55px;
+    z-index: 2;
+  }
+  body main .header__main-info--download-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body main .header__main-iphone {
+    display: none;
+  }
+  body main .benefits {
+    max-width: 300px;
+    margin: 55px auto 0 auto;
+  }
+  body main .benefits__items {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  body main .benefits__item--desc {
+    font-size: 19.5px;
+    line-height: 25px;
+  }
+  body main .actions {
+    display: none;
+  }
+  body main .events {
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    margin: 80px 0;
+  }
+  body main .events img {
+    display: none;
+  }
+  body main .events__desc {
+    background: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .events__desc h2 {
+    margin: 0 0 30px 0;
+  }
+  body main .events__desc p {
+    line-height: 36px;
+    margin: 0;
+  }
+  body main .parthers {
+    margin-bottom: 40px;
+  }
+  body main .parthers h2 {
+    margin-bottom: 60px;
+  }
+  body main .parthers__icons {
+    margin-bottom: 40px;
+    position: relative;
+    width: 105%;
+  }
+  body main .parthers__icons--button {
+    z-index: 3;
+    position: absolute;
+    top: 40%;
+    left: 10px;
+  }
+  body main .parthers__icons--button.right {
+    z-index: 3;
+    position: absolute;
+    top: 40%;
+    left: 330px;
+  }
+  body main .parthers__icons--main #prada,
+  body main .parthers__icons--main #nike,
+  body main .parthers__icons--main #zara,
+  body main .parthers__icons--main #pazolini {
+    display: none;
+  }
+  body main .parthers--info {
+    max-width: 310px;
+  }
+  body main .parthers--info.first {
+    margin-bottom: 10px;
+  }
+  body main .parthers--info.last {
+    margin-bottom: 40px;
+  }
+  body footer {
+    max-height: 183px;
+    padding: 40px 68px;
+    max-width: 390px;
+    background-position: center center;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 40px;
+  }
+  body footer .footer {
+    align-items: center;
+    gap: 30px;
+  }
+  body footer .footer__links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }/*# sourceMappingURL=styles.css.map */
