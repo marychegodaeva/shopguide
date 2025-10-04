@@ -1,20 +1,22 @@
 // colors:
-$white: #FFFFFF;
+$white: #ffffff;
 $black: #000000;
-$blue: #29D3D1;
-$red: #EB645A;
-$grey: #EDECEC;
+$blue: #29d3d1;
+$red: #eb645a;
+$grey: #edecec;
 
 // fonts:
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-$jost: 'Jost', sans-serif;
-$montserrat: 'Montserrat', sans-serif;
+$jost: "Jost", sans-serif;
+$montserrat: "Montserrat", sans-serif;
 
 $regular: 400;
 $medium: 500;
 $bold: 600;
+
+$t05: 0.5s ease;
 
 // buttons:
 .button {
@@ -32,12 +34,46 @@ $bold: 600;
   outline: 2px solid $white;
   outline-offset: -2px;
   cursor: pointer;
+  border: none;
 
   &:hover {
     background-color: $blue;
     outline: none;
-    transition-duration: 0.5s;
+    transition: $t05;
   }
+}
+
+.blue-button {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background-color: $blue;
+  border: none;
+  border-radius: 15px;
+  padding: 17px 60px;
+  max-width: 277px;
+  outline: none;
+  max-height: 51px;
+  box-shadow: 1px 4px 24px rgba(0, 0, 0, 0.35);
+
+  &:hover {
+    background-color: $white;
+    outline: 2px solid $blue;
+    color: $blue;
+
+    svg path {
+      stroke: $blue;
+      transition: $t05;
+    }
+  }
+}
+
+span {
+  text-transform: uppercase;
+  font-family: $montserrat;
+  font-size: 14px;
+  font-weight: $bold;
+  letter-spacing: -0.5px;
 }
 
 ::selection {
