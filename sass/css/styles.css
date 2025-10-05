@@ -237,8 +237,12 @@ body main .actions__desc-chapters {
   padding: 60px 10px 30px 10px;
   display: flex;
   gap: 50px;
+  position: relative;
+  overflow: hidden;
 }
 body main .actions__desc-chapters h3 {
+  flex-shrink: 0;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -264,6 +268,7 @@ body main .actions__desc-info {
   line-height: 30px;
   margin: 0 10px 60px 600px;
   max-width: 735px;
+  transition: opacity 0.3s ease;
 }
 body main .events {
   margin: 255px 0 68px 0;
@@ -320,11 +325,22 @@ body main .parthers__icons {
   gap: 20px;
   padding: 50px 0;
   margin-bottom: 50px;
+  position: relative;
 }
 body main .parthers__icons--button {
   background: none;
   border: none;
   cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 40%;
+  z-index: 3;
+}
+body main .parthers__icons--button:not(.right) {
+  left: 10px;
+}
+body main .parthers__icons--button.right {
+  right: 10px;
 }
 body main .parthers__icons--button svg circle:hover {
   fill: #ffffff;
@@ -507,16 +523,10 @@ body footer .button {
     width: 105%;
   }
   body main .parthers__icons--button {
-    z-index: 3;
-    position: absolute;
-    top: 40%;
-    left: 10px;
+    display: block !important;
   }
-  body main .parthers__icons--button.right {
-    z-index: 3;
-    position: absolute;
-    top: 40%;
-    left: 330px;
+  body main .parthers__icons--main {
+    justify-content: flex-start !important;
   }
   body main .parthers__icons--main #prada,
   body main .parthers__icons--main #nike,

@@ -198,8 +198,12 @@ body {
           padding: 60px 10px 30px 10px;
           display: flex;
           gap: 50px;
+          position: relative;
+          overflow: hidden;
 
           h3 {
+            flex-shrink: 0;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             margin: 0;
             font-family: $montserrat;
             font-weight: $bold;
@@ -229,6 +233,7 @@ body {
           line-height: 30px;
           margin: 0 10px 60px 600px;
           max-width: 735px;
+          transition: opacity 0.3s ease;
         }
       }
     }
@@ -295,11 +300,24 @@ body {
         gap: 20px;
         padding: 50px 0;
         margin-bottom: 50px;
+        position: relative;
 
         &--button {
           background: none;
           border: none;
           cursor: pointer;
+          display: none;
+          position: absolute;
+          top: 40%;
+          z-index: 3;
+
+          &:not(.right) {
+            left: 10px;
+          }
+
+          &.right {
+            right: 10px;
+          }
 
           svg circle:hover {
             fill: $white;
@@ -312,9 +330,19 @@ body {
           align-items: center;
           justify-content: center;
           gap: 44px;
+          // overflow-x: auto;
+          // scroll-behavior: smooth;
+          // scrollbar-width: none;
+          // -ms-overflow-style: none;
+
+          // &::-webkit-scrollbar {
+          //   display: none;
+          // }
 
           img {
             cursor: pointer;
+            // flex-shrink: 0;
+            // transition: opacity 0.3s ease, visibility 0.3s ease;
 
             &:hover {
               transition: $t05;

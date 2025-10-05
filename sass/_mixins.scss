@@ -107,20 +107,12 @@
           width: 105%;
 
           &--button {
-            z-index: 3;
-            position: absolute;
-            top: 40%;
-            left: 10px;
-
-            &.right {
-              z-index: 3;
-              position: absolute;
-              top: 40%;
-              left: 330px;
-            }
+            display: block !important;
           }
 
           &--main {
+            justify-content: flex-start !important;
+
             #prada,
             #nike,
             #zara,
